@@ -6,6 +6,7 @@ const controller = require('../controller/controller')
 
 //  @description Root Route
 //  @method GET/
+// CLIENT
 
 route.get('/',services.homeRoutes)
 

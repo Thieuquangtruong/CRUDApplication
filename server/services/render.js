@@ -4,14 +4,11 @@ exports.homeRoutes = (req, res) => {
     // Make a get request to /api/users
     axios.get('http://localhost:9999/api/users')
         .then(function(response){
-            console.log(response)
             res.render('index', { users : response.data });
         })
         .catch(err =>{
             res.send(err);
         })
-
-    
 }
 
 exports.add_user = (req,res) =>{

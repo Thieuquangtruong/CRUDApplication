@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
 
+// Kết nối với database
+// mongoose.connect('mongodb://localhost:9999/member');
+
 var schema = new mongoose.Schema({
     name : {
         type : String,
